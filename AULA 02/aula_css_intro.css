@@ -1,0 +1,42 @@
+    body {
+    background-image: url("../AULA 01/carro.webp");
+    background-color: white;
+    
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+     }
+     
+     /* Estilizando o Titulo 1 */
+     h1 {
+        color: blue;
+     
+     }
+
+     /* Estilizando a Com classes */
+     .Verde{
+           color: green;
+
+     }
+     
+     /* Estilizando o Botão */
+     .botao {
+           background-color: blue;
+           color: white;
+           padding: 10px 20px;
+           border: none;
+           border-radius: 5px;
+           font-size: 16px;
+     }
+
+      /* Estilizando o Botão btnaviso */
+     .btnaviso {
+               background-color: red;
+               color: white;
+               padding: 10px 20px;
+               border: none;
+               border-radius: 5px;
+               font-size: 16px;
+     }
