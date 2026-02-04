@@ -1,0 +1,16 @@
+h4{
+    color: blueviolet;
+}
+
+.linha{
+    width: 300px; 
+    /* Largura */
+    padding: 20px;
+    /* Espaço entre as Linhas */
+    border: 2px solid black;
+    /* Bordar */
+    margin: 10px;
+    /* Margem */
+    background-color: rgb(0, 255, 64);
+    /* Cor de Fundo */
+}
