@@ -1,0 +1,90 @@
+/* Estilos Gerais */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none; /* remover os sublinhados de todos os links*/
+  color: inherit; /*manter a cor do Texto*/
+}
+
+/* Cabeçalho */
+.topo {
+    display: flex; /* Alinhar o Logo e menu na mesma linha */
+    justify-content: space-between; /*Espaço entre o logotipo e o Menu */
+    align-items: center; /* Alinhamento vertical */
+    padding: 16px 24px; /* Espaçamento entre lihhas e colunas*/
+    background-color: white; /* Cor de fundo*/
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Logotipo */
+.logo {
+     font-size: 24px;
+     font-weight: bold;
+}
+
+.logo_destaque {
+     color: #0066cc; /* Cor para destacar a palavra (Eleytro) */
+
+}
+
+/* Navegaçaõ */
+.menu a {
+    margin-left: 16px; /* espaço entre as linhas */
+    font-weight: bold;
+    color: #333;
+}
+
+.menu a:hover {
+    color: #0066cc;
+}
+
+
+/* Banner */
+.banner {
+    background: linear-gradient(120deg, #2b748e, #080ce9d5, rgb(100, 209, 241)); /*Fundo gradiente*/
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.banner_conteudo {
+    max-width: 700px; /*Limita a largura do texto*/
+   margin: 0 auto; /* Centralizar o Texto*/
+}
+
+/* Class Cards */
+.cards {
+    display: grid; /*Use o Grid para alinhar os cards*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px; /*Espaçamento entre os cards*/
+    margin-top: 24px;
+}
+
+.card {
+    background-color: #4cb3ea;
+    padding: 20px;
+    border-radius: 6px;
+    border: 6px solid #e8e2e2;
+}
+
+/* Produtos */
+.produtos {
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.grid_produtos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax 220px, 1fr);
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.produto{
+    background-color: white;
+    padding: 16px;
+    border-radius: 6px;
+    border: 2px solid white;
+}
