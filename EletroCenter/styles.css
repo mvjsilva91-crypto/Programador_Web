@@ -164,8 +164,10 @@ a {
 /* rodapé */
 
 .aviso {
-    background-color: #f3f6f7;
-    border: 1px solid rgb(108, 108, 236);
+    background-color: white;
+    border: 1px solid rgb(240, 42, 7);
+    font-size: 20px;
+    color: red;
     padding: 12px;
     border-radius: 6px;
     display: inline-block;

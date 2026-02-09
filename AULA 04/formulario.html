@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Formularios</title>
+</head>
+<body>
+    <h1>Formulário e seus elementos</h1>
+    <form action="" method="">
+        <!-- Nome  -->
+        <label for="nome">Nome do Cliente</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" width="60" maxlength="5" required>
+        <br>
+        <!-- Senha  -->
+        <label for="password">Senha</label>
+        <input type="password" id="semha" name="senha">
+        <br>
+         <!-- checkbox -->
+        <label for="checkbox">Checkbox</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br>
+        <!-- Radio -->
+        <label for="radio">Masculino</label>
+        <input type="radio" id="sexo" value="Masculino" name="sexo">
+        <label for="radio">Feminino</label>
+        <input type="radio" id="sexo" value="Feminino" name="sexo">
+        <br>
+          <!-- Email -->
+        <label for="radio">email</label>
+        <input type="email" id="email" name="email">
+        <br>
+
+     
+         <!-- textarea -->
+        <label for="">Observação</label>
+        <textarea id="Observação" name="Observação" rows="5" cols="60"></textarea>
+        <br>
+         <!-- Registro  -->
+        <label for="">Registro</label>
+        <input type="text" id="registro" name="registro" value="123456">
+        <br>
+         <!-- Somente numeros -->
+         <label for="">Número da sorte</label>
+        <input type="number" id="numero" name="numero">
+        <br>
+        <input type="hidden" name="id_client" value="1">
+         <!-- Resetar -->
+        <input type="reset" value="reset">
+        <input type="submit" value="Enviar">
+         <br>
+
+        
+
+
+
+
+    </form>
+
+</body>
+</html>
