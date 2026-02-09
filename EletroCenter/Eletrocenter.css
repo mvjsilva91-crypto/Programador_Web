@@ -1,8 +1,6 @@
 /* Estilos Gerais */
 body{
-    background-color: #eaf3f3;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 a {
@@ -45,7 +43,7 @@ a {
 
 /* Banner */
 .banner {
-    background: linear-gradient(120deg, #2b748e, #080ce9d5, rgb(100, 209, 241)); /*Fundo gradiente*/
+    background: linear-gradient(120deg, #61ddee, #080ce9d5, #ac90ee); /*Fundo gradiente*/
     color: #ffffff;
     text-align: center;
     padding: 80px 20px;
@@ -69,13 +67,17 @@ a {
     padding: 20px;
     border-radius: 6px;
     border: 6px solid #e8e2e2;
-    margin-top: 24px;
 }
 
 /* Produtos */
 .produtos {
     background-color: #e0e0e0;
     text-align: center;
+}
+
+.produto_titulo {
+    font-size: 30px;
+   
 }
 
 .grid_produtos {
@@ -97,89 +99,36 @@ a {
     width: 100%;
     height: 150px;
     object-fit: cover; /*Garante que a imagem preencha sem Destorcer*/
-    border-radius: 4px;
+    border-radius: 10px;
     margin-bottom: 12px;
-    background-color: rgb(133, 222, 239); /*Cor de fundo enquanto não carrehga*/
-}
-
-.produto_img:hover{
-    transform: scale(1.1);
-}
-
-/* Serviços */
-
-.servicos {
-    background-color: white;
-    border: 1px solid rgb(73, 73, 228);
-    font-size: 20px;
-
-}
-
-.servicos h2 {
-    margin-bottom: 8px;
-}
-
-.servicos ul {
-    max-width: 500px;
-    margin-top: 15px;
-    margin-left: 0;
-    text-align: left;
-    list-style: square; /*Marcadores Simples*/
-    padding-left: 20px;
-}
-
-/* Sobre  */
-
-.sobre {
-     background-color: white;
-    border: 1px solid rgb(73, 73, 228);
-    text-align: center;
-
-
-}
-
-.sobre p {
-    max-width: 700px;
-    margin: 0 auto;
-
-}
-
-/* Contato */
-
-.contato {
-     background-color: white;
-    border: 1px solid rgb(73, 73, 228);
-    text-align: center;
-
-}
-
-.contato_info {
-    margin-bottom: 16px;
+    background-color: rgb(133, 222, 239); /*Cor de fundo enquanto não carrega*/
     
 }
 
-
-
-
-/* rodapé */
-
-.aviso {
-    background-color: #f3f6f7;
-    border: 1px solid rgb(108, 108, 236);
-    padding: 12px;
-    border-radius: 6px;
-    display: inline-block;
+.produto_img:hover {
+    transform: scale(1.1);
 }
 
-.rodape {
-    background-color: rgb(19, 9, 9);
+/* Estilo do botão */
+.btn {
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    background: rgb(10, 10, 10);
+    color: #e0e0e0;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    justify-self: center;
+    border-radius: 7px;
     text-align: center;
-    padding: 16px;
-    color: #ffffff;
+    align-self: center;
+    margin-top: auto;
+     transition: all 0.4s ease-in-out;
 }
 
-/* do section - destaques ao produtos  */
-.conteiner {
-    margin-left: 5%;
-    margin-right: 5%;
+.btn:hover {
+   background-color: #171ad1;
+   transform: scale (1.1);
+
 }
