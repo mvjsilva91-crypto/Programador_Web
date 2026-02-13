@@ -19,6 +19,7 @@
     <button onclick="transformarFrase()">Transformar</button>
     <div id="resultadoFrase"></div>
     <div id="primeiroNome"></div>
+    <div id="sobreNome"></div>
 
     <script>
         let frutas = ["maçã", "banana", "abacaixi"];
@@ -44,6 +45,7 @@
             let palavras = frase.split(" ");  /*Separar por Espaços*/
             document.getElementById("resultadoFrase").innerHTML ="Array de palavras: [" + palavras.join(", ") + "]";
             document.getElementById("primeiroNome").innerHTML = "Bem Vindo " + palavras[0];
+                 document.getElementById("sobreNome").innerHTML = "Seu sobrenome é: " + palavras[palavras.length [2]];
         }
     </script>
 </body>
