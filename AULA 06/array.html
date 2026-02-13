@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula de Arrays</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            margin: 45px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        button {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(2, 88, 88);
+        }
+    </style>
+ 
 </head>
 <body>
     <h1>Exemplos de Arrays em JavaScript</h1>
@@ -40,6 +57,12 @@
             frutas.sort();
             mostrarFrutas();
         }
+
+        // FRUTAS - Para Remover um item especifico
+        // ["maçã", "banana", "abacaixi"]
+        // frutas.splice(1,1) =mo primeiro numero é o indice do item 
+        // O segundo numero é a quantidade de Itens que quero excluir
+
         function transformarFrase() {
             let frase = document.getElementById("frase").value;
             let palavras = frase.split(" ");  /*Separar por Espaços*/
