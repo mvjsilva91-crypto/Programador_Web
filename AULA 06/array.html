@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Arrays</title>
+</head>
+<body>
+    <h1>Exemplos de Arrays em JavaScript</h1>
+    <button onclick ="mostrarFrutas()">Mostar Frutas</button>
+    <button onclick="adicionarFrutas()">Adicionar Frutas</button>
+    <button onclick="removerFrutas()">Removaer Frutas</button>
+
+    <div id="saida"></div>
+
+    <script>
+        let frutas = ["maçã", "banana", "Abacaixi"];
+        function mostrarFrutas() {
+            document.getElementById("saida").innerHTML = frutas.join(", ");
+
+        }
+        function adicionarFrutas() {
+            let nova = prompt("Informe o nome de uma Fruta: ");
+            frutas.push(nova);
+            mostrarFrutas();
+        }
+        function removerFrutas() {
+            frutas.pop();
+            mostrarFrutas();
+        }
+    </script>
+</body>
+</html>
