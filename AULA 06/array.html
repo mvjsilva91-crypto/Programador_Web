@@ -9,12 +9,19 @@
     <h1>Exemplos de Arrays em JavaScript</h1>
     <button onclick ="mostrarFrutas()">Mostar Frutas</button>
     <button onclick="adicionarFrutas()">Adicionar Frutas</button>
-    <button onclick="removerFrutas()">Removaer Frutas</button>
+    <button onclick="removerFrutas()">Remover Frutas</button>
+    <button onclick="ordenarFrutas()">Ordenar Frutas</button>
 
     <div id="saida"></div>
+    <br>
+    <h2>Exercicio: Transformar frases em Array </h2>
+    <input type="text" name="frase" id="frase" placeholder="Digite uma frase" >
+    <button onclick="transformarFrase()">Transformar</button>
+    <div id="resultadoFrase"></div>
+    <div id="primeiroNome"></div>
 
     <script>
-        let frutas = ["maçã", "banana", "Abacaixi"];
+        let frutas = ["maçã", "banana", "abacaixi"];
         function mostrarFrutas() {
             document.getElementById("saida").innerHTML = frutas.join(", ");
 
@@ -27,6 +34,16 @@
         function removerFrutas() {
             frutas.pop();
             mostrarFrutas();
+        }
+        function ordenarFrutas() {
+            frutas.sort();
+            mostrarFrutas();
+        }
+        function transformarFrase() {
+            let frase = document.getElementById("frase").value;
+            let palavras = frase.split(" ");  /*Separar por Espaços*/
+            document.getElementById("resultadoFrase").innerHTML ="Array de palavras: [" + palavras.join(", ") + "]";
+            document.getElementById("primeiroNome").innerHTML = "Bem Vindo " + palavras[0];
         }
     </script>
 </body>
