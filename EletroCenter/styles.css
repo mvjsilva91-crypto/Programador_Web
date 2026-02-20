@@ -68,6 +68,26 @@ a {
 
 }
 
+/* Botão TOPO  */
+.btn-topo {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: #4cb3ea;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgb(0,0, 0,0,2);
+    opacity: 10;
+    pointer-events: none;
+
+}
+
 /* Responsividade */
 @media(max-width: 700px) {
     .topo {

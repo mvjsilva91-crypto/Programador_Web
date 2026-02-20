@@ -24,3 +24,24 @@ if(menuToggle && menu) {
         });
     });
 }
+
+// Botão para o topo 
+const btnTopo = document.querySelector(".btn-topo");
+
+if(btnTopo) { const mostrarBotaoTopo = () => {
+    if(window.scrollY > 200) {
+        btnTopo.classList.add("ls-visible");
+    }else {
+        btnTopo.classList.remove("ls-visible");
+
+    }    
+    };
+    
+    // Mostrar ou esconder confirm. rolagem  
+    window.addEventListener("scroll", mostrarBotaoTopo);
+    mostrarBotaoTopo();
+
+
+
+}
+}
