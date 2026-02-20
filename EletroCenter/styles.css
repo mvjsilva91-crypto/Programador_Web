@@ -33,13 +33,69 @@ a {
 
 /* Navegaçaõ */
 .menu a {
-    margin-left: 16px; /* espaço entre as linhas */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 16px;
+    margin-left: 0; /* espaço entre as linhas */
+    text-align: center;
+    border-top: 1px solid whitesmoke;
     font-weight: bold;
     color: #333;
 }
 
 .menu a:hover {
     color: #0066cc;
+}
+
+/* Botão Hamburguer  */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: transparent;
+    gap: 5px;
+    border: 0;
+    cursor: pointer;
+    padding: 6px;
+
+}
+
+.menu-toggle span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+
+}
+
+/* Responsividade */
+@media(max-width: 700px) {
+    .topo {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        align-self: flex-end;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #eaf3f3;
+        border-top: 1px solid #e0e0e0;
+        padding: 8px 0;
+    }
+
+    .menu.menu--open {
+        display: flex;
+    }
 }
 
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo da raiz quadrada</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+
+        #base{
+            background-color: black;
+            color: white;
+        }
+        #expoente{
+            background-color: black;
+            color: white;
+        }
+
+        #pot{
+            background-color: rgb(9, 25, 243);
+            color: white;
+        }
+
+        #quad{
+            background-color: rgb(9, 25, 243);
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Caluculo da raiz Quadrada</h1>
+    
+    <input type="number" id="base" placeholder="Base">
+    <input type="number" id="expoente" placeholder="Expoente">
+    <button onclick="potencia()" id="pot">Potência</button>
+    <button onclick="raiz()" id="quad">Raiz quadrada</button>
+    <p id="resultado"></p>
+
+    <script>
+        function potencia() {
+            let base = parseFloat(document.getElementById("base").value);
+            let exp = parseFloat(document.getElementById("expoente").value);
+            document.getElementById("resultado").innerText = "Resultado " + Math.pow(base, exp);
+        }
+
+        function raiz() {
+            let base = parseFloat(document.getElementById("base").value);
+            document.getElementById("resultado").innerText = "Raiz quadrada: " + Math.sqrt(base);
+        }
+
+
+    </script>
+</body>
+</html>
